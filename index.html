@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Fonts CDN-->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!--- Custom Css --->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome CDN -->
+    <!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"-->
+	<link rel="stylesheet" href="css/style1.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Internal CSS -->
+
+    <style>
+      .slideUpBtn {
+    padding: 12px 24px;
+    background-color: transparent;
+    border: 2px solid hsl(243, 80%, 62%);
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(1,.15,.34,.92)
+}
+
+.slideUpBtn span {
+    display: inline-block;
+    transition: inherit;
+    color: hsl(243, 80%, 62%);
+}
+
+.slideUpBtn:hover span {
+    opacity: 0;
+    transform: translateY(-100%)
+}
+
+.slideUpBtn::before {
+    content: "";
+    background-color: hsl(243, 80%, 62%);;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateY(100%);
+    transition: inherit;
+    width: 100%;
+    transition: transform 0.5s cubic-bezier(1,.15,.34,.92)
+}
+
+.slideUpBtn::after {
+    content: 'Vote Now';
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: inherit;
+    transform: translateY(100%);
+    width: 100%;
+
+}
+
+.slideUpBtn:hover::before {
+    transform: translateY(0) scale(3);
+    transition-delay: .025s;
+}
+
+.slideUpBtn:hover::after {
+    opacity: 1;
+    color: hsl(222, 100%, 95%);
+    transform: translateY(0);
+}
+
+.collapse navbar-collapse {
+	text-align: right;
+
+}
+
+    </style>
+<!-- End Internal CSS -->
+</head>
+<body>
+
+<!------------------  Navbar Section ------------------>
+
+<div class="container-fluid" id="cont-3">
+<header id="nav-bar">
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="nav-link" href=index.html  style="color:orange; font-weight: 600; text-align: center; font-size: 38px;">去投票!</a><hr></hr>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon" style="color: white;"></span>
+  </button>
+    
+   <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item" >
+          <a class="nav-link" href="cat1/page.html" style="color:white; font-weight: 600; text-align: center; font-size: 28px; margin-top: 20px;  text-transform: capitalize; padding: 20px;">「感動時刻」</a><hr></hr>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link" href="cat2/page.html"  style="color: white; font-weight: 600; text-align: center; font-size: 28px; margin-top: 20px;  text-transform: capitalize; padding: 20px;">「陽光笑容」</a><hr></hr>
+        </li>
+      
+        <li class="nav-item">
+          <a class="nav-link" href="cat3/page.html" style="color: white; font-weight: 600; text-align: center; font-size: 28px; margin-top: 20px;  text-transform: capitalize; padding: 20px;">「躍動傳奇」</a><hr></hr>
+        </li>
+      
+        <li class="nav-item" >
+          <a class="nav-link" href="cat4/page.html"  style="color: white; font-weight: 600; text-align: center; font-size: 28px; margin-top: 20px;  text-transform: capitalize; padding: 20px;">「合作無間」</a><hr></hr>
+        </li>
+      
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!------------------  HomePage Section ------------------>
+
+<!--section id="banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 animate__animated animate__bounceInLeft" style="text-align: center;">
+        <h1>ONLINE VOTING SYSTEM</h1>
+        <p>Online voting systems are software platforms used to securely conduct votes and elections. As a digital platform, they eliminate the need to cast your votes using paper or having to gather in person.</p>
+      <a href="candidate.php"><button class="magnifyBtn">VOTE NOW</button></a>
+      </div>
+      
+      <div class="col-md-6"> 
+             <img src="img/2.svg" alt="" srcset="" height="400vh " width="90%" class="animate__animated animate__bounceInRight " style="margin-left: 10px; margin-top: 20px;" >
+                </div> 
+            </div>  
+         </div>
+        </div>
+      </div>
+    </div>
+</section-->
+ <!------------------  Space Section ------------------> 
+  
+<!--section class="space">
+  <div class="container">
+    <div class="col-md-12">
+      <div class="row">
+    
+      </div>
+    </div>
+</section-->
+
+<!------------------  Candidate Section ------------------>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12"><br><br>     
+			<h1><B>尋找體康活動的「你」「我」「他」攝影比賽</B></h1>
+		</div>
+    </div>  
+</div> 
+
+<!------------------  About Section ------------------>
+<!--section>
+    <div class="container-fluid" style="margin-top: 50px;">
+      <div class="row" style="background: linear-gradient(to right, #a517ba,#5f1178 );" width="100%">
+        <div class="col-md-12" style="background-image: linear-gradient(to right, #a517ba,#5f1178 ); color: white;">
+          <h1 style="text-align: center; background-image: linear-gradient(to right, #a517ba,#5f1178 ); color: white;"> About Voting</h1>
+          <p> About Voting In Beif</p>
+        </div>
+        <div class="col-md-6" >
+          <img src="img/4.svg" alt="" srcset="" >
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <h1 style="color: white; margin-top: 40px;" class=" ">About</h1>
+          <p style="color: white;" class=" ">Voting is a method for a group, such as a meeting or an electorate, in order to make a collective decision or express an opinion usually following discussions, debates or election campaigns. Democracies elect holders of high office by voting. Residents of a place represented by an elected official are called "constituents", and those constituents who cast a ballot for their chosen candidate are called "voters". There are different systems for collecting votes, but while many of the systems used in decision-making can also be used as electoral systems, any which cater for proportional representation can only be used in elections.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+</section-->
+<!------------------  Contact Form Section ------------------>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <!--h1> Contact Form </h1--><BR><br>
+          <!--p style="padding-bottom:50px;">Any Queries , Drop Contact Form  </p-->  
+        </div>
+        <div class="col-md-4" style="border-radius: 6px; border: 3px  orange solid; min-width: 48%">
+		<!--  width: 100px; height: 450px; box-sizing: border-box; -->
+          <h2 style="padding-top: 30px;">輸入資料並投票</h2>
+          <form action="contact.php" method="post">
+            <table>
+              <tr>
+                <td><label style="float: right; outline:none;"> 中文姓名 : </label></td>
+				      	<td style="padding-left: 10px; padding-bottom: 10px;"><input placeholder="請輸入中文姓名" type="text" name="txtChiName" ></td>
+              </tr>
+			  <tr>
+                <td><label style="float: right; outline:none;"> 英文姓名 : </label></td>
+				      	<td style="padding-left: 10px; padding-bottom: 10px;"><input placeholder="請輸入英文姓名" type="text" name="txtEngName" ></td>
+              </tr>
+              <tr >
+                <td><label style="float: right;"> 電郵 : </label></td>
+					      <td style="padding-left: 10px; padding-bottom: 10px;"><input required placeholder="請輸入電郵地址" type="email" name="txtEmail"></td>
+              </tr>
+			  
+			  <tr >
+               <td> <label style="float: right; "> 電話 : </label></td>
+					      <td style="padding-left: 10px; padding-bottom: 10px;"><input required placeholder="請輸入電話號碼" type="Phone" name="txtPhone"></td>
+              </tr>
+			  
+              <tr>
+                <td><label style="float: right; "> 崗位 : </label></td>
+                <td style="padding-left: 10px; padding-bottom: 10px;"><textarea placeholder="請輸入現時的崗位(現職人員)/最後的崗位(退休人員)" name="txtPosting" rows="2" cols="22"></textarea></td>
+              </tr>
+			  
+			  <tr>
+                <td><label style="float: right; "> 你投選的一票 : </label></td>
+                <td style="padding-left: 10px; padding-bottom: 10px;"><textarea placeholder="請輸入你投選的作品編號(每人只限一幅)" name="txtVote" rows="2" cols="22"></textarea></td>
+              </tr>
+			  
+              <!--tr>
+              <td style="padding-left: 10px; padding-bottom: 10px;"><button class="magnifyBtn">Submit</button></a></td>
+              </tr-->
+            </table>
+			<button class="magnifyBtn">Submit</button><br></br>
+          </form>
+        </div>
+		
+		
+        <div class="col-md-6" style="padding-left: 20px; width: 100%; padding-top: 30px;">
+          <!--img src="img/6.svg" alt="" srcset=""-->
+			<p style="text-align: left;  padding-bottom:0px; padding-left:10px;"><b><U>注意事項</u></b></p>
+			<p style="text-align: left;  padding-bottom:10px; padding-left:10px;">● 請在四個相片主題中, 只投選<b>一幅作品</b>並輸入正確相片編號。</p>  
+			<p style="text-align: left;  padding-bottom:10px; padding-left:10px;">● 若同一人員作多於一次投票, 該人員只有於有效投票時間內最後一次投票為有效。</p>  
+			<p style="text-align: left;  padding-bottom:10px; padding-left:10px;">● 如遞交的資料或投票資料有不足或有誤，處理統計投票的人員有可能會聯絡投票人士以核對投票選項。</p>
+			<p style="text-align: left;  padding-bottom:10px; padding-left:10px;">● 投票截止時間為 2024年1月18日(星期四) 下午5時正。</p>
+			
+			<p style="text-align: left;  padding-bottom:0px; padding-left:10px;"><b><u>個人資料</u></b></p>
+			<p style="text-align: left;  padding-bottom:10px; padding-left:10px;">● 個人資料是由參與投票之現職海關人員或已退休人員自願提供，閣下提供之個人資料將予保密，有關資料只會用作核對參與是次尋找體康活動的「你」「我」「他」攝影比賽投票之用。資料只會提供處理統計投票的人員參閱，作為審批、聯絡及相關的用途。已遞交資料的投票者有權要求查閱和修正個人資料。如有需要，請以書面提出並郵寄至 北角渣華道222號海關總部大樓31樓3118室香港海關體育及康樂小組。</P>
+			
+        </div>
+      </div>
+    </div>
+</section>
+
+<!--section>
+  <div class="container-fluid" style="margin-top: 50px;">
+    <div class="row" style="background: linear-gradient(to right, #a517ba,#5f1178 );" width="100%">
+      <div class="col-md-12" style="background-image: linear-gradient(to right, #a517ba,#5f1178 ); color: white;">
+        <h1 style="text-align: center; background-image: linear-gradient(to right, #a517ba,#5f1178 ); color: white;"> Become Candidate</h1>
+        <p>Become a Candidate</p>
+      </div>
+      <div class="col-md-6" >
+        <img src="img/11.svg" style="height: 400px;" >
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <h1 style="color: white; margin-top: 40px; margin-bottom: 40px;" class=" ">Apply</h1>
+        <p style="color: white;" >
+          If you want to become a candidate, then you click on the link below, then you will be redirected. In the second
+           page, by filling that, you can request for a candidateAfter that, the administrator will approve your request so you can become a candidate.
+           </p>
+           <a href="insert_cand_year.php"><button class="magnifyBtn" style="margin-bottom: 40px;">Apply</button></a>
+      </div>
+    </div>
+    </div>
+  </div>
+</section-->
+
+<!------------------  Footer Section ------------------>
+
+<!--section>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <hr>
+      <div class="Footer">
+        <ul style="display: flex;">
+          <li style="list-style: none; padding: 10px; "><a href="http://www.customs.gov.hk" style="text-decoration: none; color: #a517ba;">Home</a></li>
+          <li style="list-style: none; padding: 10px; "><a href="about.php" style="text-decoration: none; color: #a517ba;">About</a></li>
+          <li style="list-style: none; padding: 10px; "><a href="suggestion.html" style="text-decoration: none; color: #a517ba;">Suggestion</a></li>
+          <li style="list-style: none; padding: 10px; "><a href="contact_form.php" style="text-decoration: none; color: #a517ba;">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <hr>
+      <div class="social-icon">
+        <ul >
+                        <li>
+                            <a href="">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-pinterest"></i>
+                            </a>
+                        </li>
+                    </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</section-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>    
+    <script src="js/bootstrap.min.js"></script>  
+	<!--script src="js/script.js"></script-->
+	<script src="js/script_cat2.js"></script>
+ 
+  </body>
+</html>
